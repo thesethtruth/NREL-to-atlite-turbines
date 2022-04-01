@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2022 The Atlite Authors
+#
+# SPDX-License-Identifier: CC-BY-4.0
+
+# Turbine characteristic data
+name: VestasV47_660kW_47
+# The manufacturer of this turbine
+manufacturer: NREL
+# Link to the original datasheet of the turbine
+source: https://nrel.github.io/turbine-models/VestasV47_660kW_47.html
+
+# Hub height in meters
+HUB_HEIGHT: 47.0
+# Power curve, specified as lists of velocities and powers, including
+# cut-in and cut-out speeds
+# Power curve velocities in m/s
+V: [4.2, 4.6, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0, 9.5, 10.0, 10.5, 11.0, 11.5, 12.0, 12.5, 13.0, 13.5, 14.0, 14.5, 14.9, 15.4, 16.0, 16.4, 16.9, 17.4, 17.9]
+# Generated power from the power curves in MW
+POW: [0.01175, 0.02646, 0.04179, 0.06786, 0.09569, 0.13144999999999998, 0.16431, 0.20984999999999998, 0.2538, 0.30119, 0.36248, 0.4067, 0.46874, 0.5085500000000001, 0.55126, 0.58782, 0.61236, 0.6343799999999999, 0.64679, 0.6514, 0.6584, 0.65946, 0.66111, 0.66116, 0.66087, 0.66122, 0.66049, 0.66147, 0.66242]

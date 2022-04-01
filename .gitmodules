@@ -1,0 +1,3 @@
+[submodule "turbine-models"]
+	path = turbine-models
+	url = https://github.com/NREL/turbine-models.git

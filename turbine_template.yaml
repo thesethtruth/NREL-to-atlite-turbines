@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2022 The Atlite Authors
+#
+# SPDX-License-Identifier: CC-BY-4.0
+
+# Turbine characteristic data
+name: {{turbine_name}}
+# The manufacturer of this turbine
+manufacturer: {{manufacturer}}
+# Link to the original datasheet of the turbine
+source: {{datasheet_source}}
+
+# Hub height in meters
+HUB_HEIGHT: {{hub_height_m}}
+# Power curve, specified as lists of velocities and powers, including
+# cut-in and cut-out speeds
+# Power curve velocities in m/s
+V: {{powercurve_v_ms}}
+# Generated power from the power curves in MW
+POW: {{powercurve_P_MW}}
