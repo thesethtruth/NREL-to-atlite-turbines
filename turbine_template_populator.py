@@ -35,7 +35,7 @@ def get_turbine_metadata(turbine_name):
 
     return df
 
-def populate_turbines(csv_folder: Path, target_dir):
+def populate_turbines(csv_folder: Path, target_dir, suffix=""):
     powercurve_files = csv_folder.glob("*.csv")
     
 
@@ -51,7 +51,7 @@ def populate_turbines(csv_folder: Path, target_dir):
                 break
             
             
-            outname = f"{nrel}_{ref}Turbine_{source}_{rated_power}.yaml"
+            outname = f"{nrel}_{ref}Turbine_{source}_{rated_power}{suffix}.yaml"
 
             df = pd.read_csv(pc)
             windspeeds_ms = list(df['Wind Speed [m/s]'].round(1).values)
@@ -75,7 +75,7 @@ def populate_turbines(csv_folder: Path, target_dir):
                 outfile.writelines(output)
                 
 
-populate_turbines(OFFSHORE, TARGET)
+populate_turbines(OFFSHORE, TARGET, suffix="_offshore")
 populate_turbines(ONSHORE, TARGET)
 
 
